@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 400px;
+  height: 550px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+main .left {
+  width: 380px;
+  background-color: #3E82FF;
+  display: grid;
+  grid-template-rows: 55% 45%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+main .left img {
+  width: 220px;
+  align-self: end;
+  justify-self: center;
+}
+main .left div {
+  padding-top: 20px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .left div h1 {
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .left div p {
+  width: 300px;
+  margin-top: 35px;
+  color: #dee;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+main .right {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+main .right .rightRegister {
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  position: absolute;
+  background: #fff;
+}
+main .right .rightLogin {
+  background: #fff;
+}
+main .right .rightLogin,
+main .right .rightRegister {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  transition: 0.3s;
+}
+main .right .rightLogin .header,
+main .right .rightRegister .header {
+  font-size: 25px;
+  color: #3E82FF;
+  font-weight: 600;
+}
+main .right .rightLogin .login form,
+main .right .rightRegister .login form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .right .rightLogin .login form .icon-icon-test,
+main .right .rightRegister .login form .icon-icon-test,
+main .right .rightLogin .login form .icon-icon-test1,
+main .right .rightRegister .login form .icon-icon-test1 {
+  font-size: 20px;
+  color: #94A9CF;
+}
+main .right .rightLogin .login form .i-1,
+main .right .rightRegister .login form .i-1 {
+  position: absolute;
+  right: 5px;
+  top: 62px;
+}
+main .right .rightLogin .login form .i-2,
+main .right .rightRegister .login form .i-2 {
+  position: absolute;
+  right: 5px;
+  top: 62px;
+}
+main .right .rightLogin .login form .i-3,
+main .right .rightRegister .login form .i-3 {
+  position: absolute;
+  right: 5px;
+  top: 115px;
+}
+main .right .rightLogin .login form input,
+main .right .rightRegister .login form input {
+  border-left-width: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #94A9CF;
+  outline: none;
+  padding: 8px 0;
+  width: 280px;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+main .right .rightLogin .login form input:last-of-type,
+main .right .rightRegister .login form input:last-of-type {
+  margin-bottom: 5px;
+}
+main .right .rightLogin .login form .tips,
+main .right .rightRegister .login form .tips {
+  font-size: 12px;
+  color: red;
+  margin-bottom: 40px;
+  height: 10px;
+}
+main .right .rightLogin .login form input:focus,
+main .right .rightRegister .login form input:focus {
+  border-bottom-width: 1px;
+  border-bottom-color: #3E82FF;
+}
+main .right .rightLogin .login form input::-webkit-input-placeholder,
+main .right .rightRegister .login form input::-webkit-input-placeholder {
+  color: #BFBFBF;
+}
+main .right .rightLogin .login form input::-moz-input-placeholder,
+main .right .rightRegister .login form input::-moz-input-placeholder {
+  color: #BFBFBF;
+}
+main .right .rightLogin .login form input::-ms-input-placeholder,
+main .right .rightRegister .login form input::-ms-input-placeholder {
+  color: #BFBFBF;
+}
+main .right .rightLogin .login form button,
+main .right .rightRegister .login form button {
+  outline: none;
+  background: none;
+  border: none;
+  width: 280px;
+  height: 38px;
+  color: #fff;
+  background-color: #3E82FF;
+  border-radius: 5px;
+}
+main .right .rightLogin .footer,
+main .right .rightRegister .footer {
+  font-size: 13px;
+  color: #666666;
+}
+main .right .rightLogin .footer a,
+main .right .rightRegister .footer a {
+  text-decoration: none;
+  color: #3E82FF;
+  cursor: pointer;
+}

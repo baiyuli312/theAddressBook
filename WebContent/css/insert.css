@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body .myHome {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  min-width: 1280px;
+  min-height: 600px;
+}
+body .myHome .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+}
+body .myHome .container .Left {
+  height: 100%;
+  width: 40%;
+  background: #3E82FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+body .myHome .container .Left header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 8%;
+  padding: 0 1px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+body .myHome .container .Left header form {
+  width: 100%;
+  position: relative;
+}
+body .myHome .container .Left header form input[type="submit"] {
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  cursor: pointer;
+  font-size: 17px;
+  background: none;
+  border: none;
+  outline: none;
+}
+body .myHome .container .Left header form input[type="text"] {
+  width: 98%;
+  height: 80%;
+  outline: none;
+  padding: 5px 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+}
+body .myHome .container .Left header .new {
+  cursor: pointer;
+}
+body .myHome .container .Left header .new .icon-add-circle {
+  font-size: 30px;
+  color: #fff;
+}
+body .myHome .container .Left main {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background: #fff;
+}
+body .myHome .container .Left main .group {
+  width: 100%;
+  transition: 0.5s;
+  height: 35px;
+  overflow: hidden;
+}
+body .myHome .container .Left main .group .groupname {
+  font-size: 16px;
+  color: #3E82FF;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 10px;
+  border-bottom: 1px solid #94A9CF;
+  display: flex;
+  justify-content: space-between;
+}
+body .myHome .container .Left main .group .groupname i {
+  padding-right: 5px;
+}
+body .myHome .container .Left main .group ul li {
+  font-size: 12px;
+  color: #aaa;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 25px;
+  border-bottom: 1px solid #ccc;
+}
+body .myHome .container .Left footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .myHome .container .Left footer .portrait {
+  cursor: pointer;
+}
+body .myHome .container .Left footer .portrait .icon-icon_logout {
+  font-size: 28px;
+  color: #fff;
+}
+body .myHome .container .Left footer .delete {
+  cursor: pointer;
+}
+body .myHome .container .Left footer .delete .icon-xiugaimima {
+  font-size: 22px;
+  color: #fff;
+}
+body .myHome .container .Right {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+body .myHome .container .Right .container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 56%;
+}
+body .myHome .container .Right .container2 .title {
+  font-size: 30px;
+  position: absolute;
+  top: -60px;
+  left: 50px;
+  color: #3E82FF;
+  font-weight: 600;
+}
+body .myHome .container .Right .container2 .R_main::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  border: solid 4px #3E82FF;
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  top: -70px;
+  right: 85px;
+}
+body .myHome .container .Right .container2 .R_main {
+  height: 420px;
+  width: 88%;
+  border-radius: 10px;
+  border: solid 4px #3E82FF;
+  margin-bottom: 10px;
+}
+body .myHome .container .Right .container2 .R_main form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  padding-top: 10px;
+  position: relative;
+}
+body .myHome .container .Right .container2 .R_main form div:nth-of-type(1) input {
+  width: 200px;
+}
+body .myHome .container .Right .container2 .R_main form div:nth-of-type(2) input {
+  zoom: 50%;
+  cursor: pointer;
+}
+body .myHome .container .Right .container2 .R_main form div {
+  padding: 6px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body .myHome .container .Right .container2 .R_main form div i {
+  color: #3E82FF;
+  font-size: 26px;
+  text-align: center;
+}
+body .myHome .container .Right .container2 .R_main form div input {
+  border-left-width: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 2px;
+  border-bottom-color: #94A9CF;
+  outline: none;
+  width: 400px;
+  height: 30px;
+  margin-left: 10px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+body .myHome .container .Right .container2 .R_main form div input:focus {
+  border-bottom-width: 2px;
+  border-bottom-color: #3E82FF;
+}
+body .myHome .container .Right .container2 .R_main form div input::-webkit-input-placeholder {
+  color: #BFBFBF;
+}
+body .myHome .container .Right .container2 .R_main form div input::-moz-input-placeholder {
+  color: #BFBFBF;
+}
+body .myHome .container .Right .container2 .R_main form div input::-ms-input-placeholder {
+  color: #BFBFBF;
+}
+body .myHome .container .Right .container2 .btm_btn {
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .myHome .container .Right .container2 .btm_btn .a {
+  display: inline-block;
+  height: 35px;
+  width: 49%;
+  background: #ddd;
+}
+body .myHome .container .Right .container2 .btm_btn input {
+  height: 35px;
+  width: 49%;
+  border: none;
+  border-radius: 10px;
+  background: #3E82FF;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+body .myHome .container .Right .container2 .btm_btn a {
+  width: 49%;
+}
+body .myHome .container .Right .container2 .btm_btn a input {
+  height: 35px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #ddd;
+  font-size: 15px;
+  color: #222;
+  outline: none;
+  cursor: pointer;
+}
+body .myHome .container .Right .container2 .btm_btn button:nth-of-type(1) {
+  background: #ddd;
+  color: #222;
+}
